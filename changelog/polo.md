@@ -11,6 +11,7 @@ Version scheme note: versions are reconstructed as `0.YY.ZZ` from git history us
 
 ### Added
 - **"Open in Marco" says so when Marco is not installed.** The action previously assumed the editor was sitting next to the viewer, because it always was; clicking it with no editor there did nothing and explained nothing. Polo now looks for Marco — beside its own executable, then along `PATH` — before offering the action. With Marco present you still get **DualView** and **Editor and View Separate**; without it the toolbar button is greyed out and its tooltip says why. The check runs afresh each time, so installing Marco while Polo is open takes effect on the next click, with no restart. _(2026-08-26)_
+- **Preview zoom**, ported over from Marco's editor: an in-page toolbar (`+`/`−`/reset, bottom-right corner of the preview, revealed on hover), `Ctrl+=`/`Ctrl+-`/`Ctrl+0` keyboard shortcuts, and `Ctrl+scroll wheel`. Deliberately session-only — the zoom level is not written to settings, since Polo opens a different document on every launch rather than one long-lived editing session. _(2026-08-25)_
 
 ### Changed
 - DualView now closes Polo only once Marco has actually started. If the editor cannot be launched, Polo stays open with the document still on screen rather than closing and leaving you with nothing. _(2026-08-26)_

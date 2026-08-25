@@ -9,6 +9,9 @@ Version scheme note: versions are reconstructed as `0.YY.ZZ` from git history us
 
 ## [Unreleased]
 
+### Added
+- **Ctrl+scroll wheel** now also zooms the preview, alongside the existing `Ctrl+=`/`Ctrl+-`/`Ctrl+0` shortcuts and the in-page zoom toolbar's `+`/`−`/reset buttons. One wheel notch = one zoom step, routed through the same `marco_zoom:in|out` IPC path the toolbar buttons already use. _(2026-08-25)_
+
 ### Changed
 - Updated to `marco-core` 1.3.3. _(2026-08-26)_
 
